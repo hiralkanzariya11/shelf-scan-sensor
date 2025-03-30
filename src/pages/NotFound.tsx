@@ -1,24 +1,32 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+
+import React from "react";
+import { useLocation, Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { AlertTriangle } from "lucide-react";
 
 const NotFound = () => {
   const location = useLocation();
 
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+        <div className="flex justify-center mb-4">
+          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
+            <AlertTriangle className="h-8 w-8 text-red-600" />
+          </div>
+        </div>
+        <h1 className="text-4xl font-bold mb-2">404</h1>
+        <p className="text-xl text-gray-600 mb-6">
+          Oops! We couldn't find the page you're looking for.
+        </p>
+        <p className="text-gray-500 mb-8">
+          The path <code className="bg-gray-100 px-1 py-0.5 rounded">{location.pathname}</code> doesn't exist.
+        </p>
+        <Link to="/">
+          <Button className="bg-shelf-blue hover:bg-blue-700">
+            Back to Dashboard
+          </Button>
+        </Link>
       </div>
     </div>
   );
