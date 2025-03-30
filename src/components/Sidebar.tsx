@@ -50,7 +50,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
         {/* Logo */}
         <div className="flex items-center justify-center h-16 border-b">
           <h1 className="text-xl font-bold text-shelf-dark">
-            ShelfScan<span className="text-shelf-green">AI</span>
+            Pet<span className="text-shelf-green">Pooja</span>
           </h1>
         </div>
         
@@ -85,7 +85,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
         {/* Footer */}
         <div className="absolute bottom-0 left-0 right-0 p-4">
           <div className="bg-shelf-gray rounded-lg p-3 text-xs text-gray-600">
-            <p className="font-medium text-shelf-dark">ShelfScanAI v1.0</p>
+            <p className="font-medium text-shelf-dark">PetPooja v1.0</p>
             <p>Computer vision enabled inventory management</p>
           </div>
         </div>

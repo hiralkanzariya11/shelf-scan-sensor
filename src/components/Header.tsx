@@ -21,7 +21,7 @@ const Header = ({ onMenuToggle }: HeaderProps) => {
           <Menu size={20} />
         </Button>
         <h1 className="text-xl font-semibold text-shelf-dark hidden md:block">
-          ShelfScan<span className="text-shelf-green">AI</span>
+          Pet<span className="text-shelf-green">Pooja</span>
         </h1>
       </div>
 
