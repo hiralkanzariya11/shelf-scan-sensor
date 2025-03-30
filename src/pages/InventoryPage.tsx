@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Input } from '@/components/ui/input';
-import { Camera, Package, Plus, Search, SlidersHorizontal } from 'lucide-react';
+import { Camera, Package, Plus, Search, SlidersHorizontal, Clock, BarChart3 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const InventoryPage = () => {
