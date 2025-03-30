@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import ScanPage from "./pages/ScanPage";
 import InventoryPage from "./pages/InventoryPage";
 import WastePage from "./pages/WastePage";
+import MenuPage from "./pages/MenuPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/scan" element={<ScanPage />} />
             <Route path="/inventory" element={<InventoryPage />} />
             <Route path="/waste" element={<WastePage />} />
+            <Route path="/menu" element={<MenuPage />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
